@@ -1,0 +1,15 @@
+@import 'mixins', 'header', 'vars', 'footer', 'haven', 'aboutus', 'sponsors', 'blocks';
+body{
+    background-color: $UACwhite;
+    margin:auto;
+    overflow-x: hidden;
+}
+
+a:hover {
+    color: $accent;
+}
+
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+

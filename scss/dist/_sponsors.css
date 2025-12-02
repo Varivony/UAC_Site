@@ -1,0 +1,120 @@
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  min-height: 640px;
+  background-color: #262626;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+@media (max-width: 1442px) {
+  .sponsors {
+    gap: 24px;
+    min-height: 500px;
+    padding: 50px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .sponsors {
+    gap: 20px;
+    min-height: 400px;
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 320px) {
+  .sponsors {
+    gap: 16px;
+    min-height: 350px;
+    padding: 30px 15px;
+  }
+}
+.sponsors-h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 90px;
+  letter-spacing: -0.25px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0px;
+  width: 100%;
+}
+@media (max-width: 1442px) {
+  .sponsors-h2 {
+    font-size: 48px;
+    line-height: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .sponsors-h2 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 320px) {
+  .sponsors-h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+.sponsors-logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 43.5px;
+  width: 100%;
+  max-width: 1833px;
+  height: auto;
+  min-height: 376px;
+}
+@media (max-width: 1442px) {
+  .sponsors-logos {
+    gap: 30px;
+    min-height: 300px;
+    max-width: 1200px;
+  }
+}
+@media (max-width: 767px) {
+  .sponsors-logos {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    min-height: auto;
+    max-width: 600px;
+  }
+}
+@media (max-width: 320px) {
+  .sponsors-logos {
+    gap: 20px;
+    max-width: 100%;
+  }
+}
+.sponsors-logos__img {
+  width: 100%;
+  max-width: 582px;
+  height: auto;
+  min-height: 376px;
+  object-fit: contain;
+}
+@media (max-width: 1442px) {
+  .sponsors-logos__img {
+    max-width: 350px;
+    min-height: 250px;
+  }
+}
+@media (max-width: 767px) {
+  .sponsors-logos__img {
+    max-width: 400px;
+    min-height: 200px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 320px) {
+  .sponsors-logos__img {
+    max-width: 100%;
+    min-height: 150px;
+  }
+}

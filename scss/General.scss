@@ -1,0 +1,13 @@
+@import 'mixins', 'header', 'vars', 'footer', 'succsess';
+body{
+    background-color: $UACwhite;
+    margin:auto;
+    overflow-x: hidden;
+}
+
+a:hover {
+    color: $accent;
+}
+.button:hover {
+    background-color: #0946B3;
+}

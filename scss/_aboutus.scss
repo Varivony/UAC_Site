@@ -1,0 +1,107 @@
+@import 'vars';
+
+.aboutus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    min-height: 804px;
+    padding: 96px 20px;
+    box-sizing: border-box;
+
+    @media (max-width: 1442px) {
+        gap: 60px;
+        min-height: 700px;
+        padding: 80px 20px;
+    }
+
+    @media (max-width: 767px) {
+        gap: 50px;
+        min-height: 600px;
+        padding: 60px 20px;
+    }
+
+    @media (max-width: 320px) {
+        gap: 40px;
+        min-height: 500px;
+        padding: 40px 15px;
+    }
+
+    &__h1{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 96px;
+        font-weight: 700;
+        line-height: 116%;
+        letter-spacing: 0px;
+        text-align: center;
+        vertical-align: center;
+        margin: 0px;
+        color: $UAClg;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+
+        @media (max-width: 1442px) {
+            font-size: 72px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 48px;
+        }
+
+        @media (max-width: 320px) {
+            font-size: 36px;
+        }
+    }
+
+    &__txt{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 38px;
+        font-weight: 400;
+        line-height: 147.5%;
+        letter-spacing: 0px;
+        text-align: center;
+        color: $UACDark;
+        width: 100%;
+        max-width: 1627px;
+        height: auto;
+        padding: 98px 0;
+        margin: 0;
+
+        @media (max-width: 1442px) {
+            font-size: 32px;
+            padding: 80px 0;
+            max-width: 1200px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 24px;
+            padding: 60px 0;
+            max-width: 800px;
+            line-height: 140%;
+        }
+
+        @media (max-width: 320px) {
+            font-size: 20px;
+            padding: 40px 0;
+            max-width: 100%;
+            line-height: 135%;
+        }
+    }
+
+    &__line{
+        width: 100%;
+        max-width: 1737px;
+        height: 0px;
+        border: 1px solid $UACDark;
+        margin: 0;
+
+        @media (max-width: 767px) {
+            max-width: 90%;
+        }
+    }
+}

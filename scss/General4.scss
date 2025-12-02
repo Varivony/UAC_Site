@@ -1,0 +1,14 @@
+@import 'mixins', 'header', 'vars', 'footer', 'notfound';
+body{
+    background-color: $UACwhite;
+    margin:auto;
+    overflow-x: hidden;
+}
+
+a:hover {
+    color: $accent;
+}
+
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

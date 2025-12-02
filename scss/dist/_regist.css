@@ -1,0 +1,98 @@
+.regist {
+  width: 1921px;
+  height: 1048px;
+  background-image: url(/imgs/Regsect.png);
+  background-color: #262626;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 57px;
+  padding-left: 96px;
+}
+.regist__h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  width: 1920px;
+  height: 101px;
+  margin: 0px;
+}
+.regist__ne {
+  color: #C4C4C4;
+}
+.regist-info {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 526px;
+  height: 441px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 31px;
+}
+.regist-info__infblock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 526px;
+  height: 87px;
+  border-width: 3px;
+  border-radius: 42px;
+  font-size: 37px;
+  font-weight: 400;
+  line-height: 147.5000023842%;
+  letter-spacing: 0px;
+  background-color: transparent;
+  padding-right: 14px;
+  border: 3px solid;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+}
+.regist__addinfo {
+  padding-top: 8px;
+  padding-right: 14px;
+  padding-bottom: 8px;
+  padding-left: 9px;
+  width: 1752px;
+  height: 152px;
+  border-width: 3px;
+  border-radius: 42px;
+  background-color: transparent;
+  padding-right: 14px;
+  border: 3px solid;
+  border-color: #FFFFFF;
+  font-size: 37px;
+  font-weight: 400;
+  line-height: 147.5000023842%;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+.regist__button {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 8px;
+  padding-right: 14px;
+  padding-bottom: 8px;
+  padding-left: 9px;
+  width: 339px;
+  height: 88px;
+  font-size: 37px;
+  font-weight: 400;
+  line-height: 147.5000023842%;
+  letter-spacing: 0px;
+  text-align: center;
+  border: 1px solid #ebebeb;
+  border-radius: 42px;
+  color: #262626;
+  background-color: #9AB9DC;
+  margin: 0px;
+}

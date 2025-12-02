@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="scss/General1.css">
+    <title>UAC</title>
+</head>
+<body>
+<header class="header">
+    <div class="header-logo">
+        <a href="str1.html"><img src="imgs/UAClogo1.png"></a>
+    </div>
+    <div class="header-nav">
+        <a class="header-nav__txt" href="404page.html">Новые проекты</a>
+        <a class="header-nav__txt" href="404page.html">Перспективные разработки</a>
+        <a class="header-nav__txt" href="404page.html">Аргент энергия</a>
+        <a class="header-nav__txt" href="str2.html">О нас</a>
+    </div>
+
+
+    <div class="header-menu">
+    <input type="checkbox" id="burger-checkbox" class="header-menu__checkbox">
+    <label for="burger-checkbox" class="header-menu__burger"></label>
+    <ul class="header-menu-list">
+        <li><a href="404page.html" class="header-menu-list__item">Новые проекты</a><li>
+        <li><a href="404page.html" class="header-menu-list__item">Разработки</a><li>
+        <li><a href="404page.html" class="header-menu-list__item">Аргент энергия</a><li>
+        <li><a href="str2.html" class="header-menu-list__item">О нас</a><li>
+    </ul>
+    </div>
+
+</header>
+
+
+
+<div class="science" style="background-image: url(sciback.png);">
+    <div class="science-inside">
+        <h1 class="science-inside__h1"> Будь на передовой человеческой науки! </h1>
+        <p class="science-inside_p"> Вступай в ряды сотрудников нашего нового научно-исследовательского комплекса на поверхности Марса уже сегодня!</p>
+        <button class="science-inside__button">Подать заявку</button>
+    </div>
+</div>
+
+
+<div class="specialist">    
+
+    <h1 class="specialist__h1">Наиболее востребованные специалисты</h1>
+    <div class="specialist-cards">
+
+        <div class="specialist-cards-card">
+            <img class="specialist-cards-card__img" src="imgs/prof1.png">
+            <h4 class="specialist-cards-card__txt">Офицеры службы безопасности</h4>
+            <button class="specialist-cards-card__btn">Подать заявку</button>
+        </div>
+        
+        
+        <div class="specialist-cards-card">
+            <img class="specialist-cards-card__img" src="imgs/prof2.png">
+            <h4 class="specialist-cards-card__txt">Обладатели учёных степеней</h4>
+            <button class="specialist-cards-card__btn">Подать заявку</button>
+        </div>
+
+        
+        <div class="specialist-cards-card">
+            <img class="specialist-cards-card__img" src="imgs/prof3.png">
+            <h4 class="specialist-cards-card__txt">Инженеры в различных областях</h4>
+            <button class="specialist-cards-card__btn">Подать заявку</button>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<footer class="footer">
+    <div class="footer__menu">
+        <a class="footer-menu__txt" href="404page.html">Проекты</a>
+        <a class="footer-menu__txt" href="404page.html">Разработки</a>
+        <a class="footer-menu__txt" href="404page.html">Ссылки</a>
+        <a class="footer-menu__txt" href="404page.html">Назад</a>
+    </div>
+
+    <hr class="footer__hr">
+
+    <div class="footer-menu__logo">
+        <a href="str1.html"><img src="imgs/LogoBig.png"></a>
+    </div>
+
+    <hr class="footer__hr">
+
+    <div class="footer__menu">
+        <a class="footer-menu__txt" href="404page.html">Вперёд</a>
+        <a class="footer-menu__txt" href="404page.html">Разработки</a>
+        <a class="footer-menu__txt" href="404page.html">Ссылки</a>
+        <a class="footer-menu__txt" href="str2.html">О нас</a>
+    </div>
+</footer>
+
+
+    <div class="modal" id="registrationModal">
+        <div class="modal__overlay"></div>
+        <div class="modal__container">
+            <form class="regist modal__step modal__step--active" data-step="1" style="background-image: url(Regsect.png);">
+                <h1 class="regist__h1">Желаете стать <span class="regist__ne">не</span>заменимым сотрудником ОАК?</h1>
+
+                <div class="regist-info">
+                    <input class="regist-info__infblock" type="text" id="name" placeholder="Имя" required>
+                    <input class="regist-info__infblock" type="text" id="surname" placeholder="Фамилия" required>
+                    <input class="regist-info__infblock" type="text" id="fathname" placeholder="Отчество" required>
+                    <input class="regist-info__infblock" type="email" id="email" placeholder="Em@il" required>
+                </div>
+
+                <textarea class="regist__addinfo" placeholder="Дополнительная информация"></textarea>
+
+                <button type="submit" class="regist__button">Подать заявку</button>
+                
+                <button type="button" class="modal__close">&times;</button>
+            </form>
+
+            <div class="sucssesful modal__step" data-step="2" style="background-image: url(Regsect.png);">
+                <h1 class="sucssesful__h1">Мы отметили ваш интерес</h1>
+                <img src="imgs/Union.png" class="sucssesful__img">
+                <h2 class="sucssesful__h2">Ваша заявка была зафикстрована. Cкоро с вами свяжется наш специалист отедла кадров!</h2>
+                
+                <button type="button" class="modal__close">&times;</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('registrationModal');
+    const openBtns = document.querySelectorAll('.specialist-cards-card__btn');
+    const closeBtns = document.querySelectorAll('.modal__close');
+    const form = document.querySelector('.regist');
+    const steps = document.querySelectorAll('.modal__step');
+    
+    openBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            openModal();
+        });
+    });
+    
+    closeBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            closeModal();
+        });
+    });
+    
+    modal.addEventListener('click', function(e) {
+        if (e.target.classList.contains('modal__overlay')) {
+            closeModal();
+        }
+    });
+    
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('modal--active')) {
+            closeModal();
+        }
+    });
+    
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        if (validateForm()) {
+            const submitButton = form.querySelector('.regist__button');
+            const originalText = submitButton.textContent;
+            submitButton.textContent = 'Отправка...';
+            submitButton.disabled = true;
+            
+            setTimeout(() => {
+                switchStep(2);
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
+            }, 1000);
+        }
+    });
+    
+    function openModal() {
+        modal.classList.add('modal--active');
+        document.body.classList.add('body--no-scroll');
+        switchStep(1);
+        form.reset();
+    }
+    
+    function closeModal() {
+        modal.classList.remove('modal--active');
+        document.body.classList.remove('body--no-scroll');
+        setTimeout(() => switchStep(1), 300);
+    }
+    
+    function switchStep(stepNumber) {
+        steps.forEach(step => {
+            step.classList.remove('modal__step--active');
+        });
+        
+        const targetStep = document.querySelector(`[data-step="${stepNumber}"]`);
+        if (targetStep) {
+            targetStep.classList.add('modal__step--active');
+        }
+    }
+    
+    function validateForm() {
+        const name = document.getElementById('name').value.trim();
+        const surname = document.getElementById('surname').value.trim();
+        const email = document.getElementById('email').value.trim();
+        
+        if (!name) {
+            alert('Пожалуйста, введите имя');
+            return false;
+        }
+        
+        if (!surname) {
+            alert('Пожалуйста, введите фамилию');
+            return false;
+        }
+        
+        if (!email) {
+            alert('Пожалуйста, введите email');
+            return false;
+        }
+        
+        if (!isValidEmail(email)) {
+            alert('Пожалуйста, введите корректный email адрес');
+            return false;
+        }
+        
+        return true;
+    }
+    
+    function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+});
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+@import 'mixins', 'header', 'vars', 'footer', 'science', 'specialist', 'modal';
+body{
+    background-color: $UACwhite;
+    margin:auto;
+    overflow-x: hidden;
+}
+
+a:hover {
+    color: $accent;
+}
+
+.science-inside__button:hover {
+            border: 1px solid  #828282;
+            color: $UACwhite;
+            background-color: transparent;  
+}
+
+.specialist-cards-card__btn:hover{
+            border: 1px solid #ebebeb;
+            color: $UACDark;
+            background-color: $accent;
+}
+
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
